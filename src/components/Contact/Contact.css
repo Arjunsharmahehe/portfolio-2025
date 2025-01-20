@@ -1,0 +1,50 @@
+.contactContainer{
+  flex: 1 0 0;
+  display: flex;
+  min-width: 304px;
+  height: 317px;
+  padding: 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  border-radius: var(--Border-Radius, 16px);
+  background: var(--Background-Primary, #706C68);
+  animation-name: appear;
+  animation-duration: 450ms;
+}
+
+.contactContainer > h1{
+  color: var(--Text-Accent, #C6BFB7);
+}
+
+.contactInfo{
+  display: flex;
+  padding: 0px 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+.contactInfo > a{
+  all: unset;
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  line-height: normal;
+  color: var(--Text-Accent, #C6BFB7);
+  font-weight: 400;
+}
+.contactInfo > a:hover{
+  text-decoration: underline;
+}
+
+@media (max-width: 806px){
+  .contactContainer > h1{
+    font-size: 48px;
+  }
+}
+@media (max-width: 680px){
+  .contactContainer > h1{
+    font-size: 56px;
+  }
+}

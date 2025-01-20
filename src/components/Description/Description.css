@@ -1,0 +1,16 @@
+.description{
+  display: flex;
+  min-width: 304px;
+  height: 317px;
+  padding: 40px 100px 40px 40px;
+  align-items: flex-end;
+  gap: 10px;
+  flex: 1 0 0;
+  border-radius: var(--Border-Radius, 16px);
+  background: var(--Background-Accent, #D5C8B5);
+  animation-name: appear;
+  animation-duration: 450ms;
+}
+.description > p{
+  font-weight: 400;
+}

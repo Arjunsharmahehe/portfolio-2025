@@ -1,0 +1,25 @@
+.socials{
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: var(--Border-Radius, 16px);
+  background: var(--Background-Accent, #D5C8B5);
+  animation-name: appear;
+  animation-duration: 500ms;
+}
+.socials > a{
+  all: unset;
+  color: var(--Text-Primary, #170D01);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  
+}
+.socials > a:hover{
+  text-decoration: underline;
+}

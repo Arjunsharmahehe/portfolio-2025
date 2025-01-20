@@ -1,0 +1,12 @@
+.navbar{
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  align-self: stretch;
+  border-radius: var(--Border-Radius, 16px);
+  background: var(--Background-Accent, #D5C8B5);
+  animation-name: appear;
+  animation-duration: 400ms;
+}

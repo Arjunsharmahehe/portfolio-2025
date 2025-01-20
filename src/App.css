@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+
+@keyframes appear {
+  from {
+    scale: 0.25;
+    opacity: 0
+  }
+  to {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+*{
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body{
+  background: var(--Background-Base, #12110D);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  margin: 0;
+}
+.App{
+  display: flex;
+  max-width: 1400px;
+  padding: 20px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  background: var(--Background-Base, #12110D);
+}
+
+p{
+  all: unset;
+  color: var(--Text-Primary, #170D01);
+  font-family: Inter;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+h1{
+  all: unset;
+  color: var(--Text-Primary, #170D01);
+  font-family: "Gloock", serif;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+a{
+  all: unset;
+  color: var(--Text-Primary, #170D01);
+  font-family: "Gloock", serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+
+.aboutAndPfpContainer{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 32px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.descriptionAndContact{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  gap: 32px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+.aboutAndContact{
+  display: flex;
+  max-width: 991px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.projectsAndSocials{
+  display: flex;
+  height: 837px;
+  min-width: 324px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  flex: 1 0 0;
+}
+.aboutAndProjects{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 32px;
+  align-self: stretch;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1380px){
+  .aboutAndContact{
+    max-width: 100%;
+  }
+}
+

@@ -1,0 +1,50 @@
+.projectsContainer{
+  display: flex;
+  padding: 20px 40px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
+  border-radius: var(--Border-Radius, 16px);
+  background: var(--Background-Accent, #D5C8B5);
+  animation-name: appear;
+  animation-duration: 475ms;
+}
+
+.project{
+  display: flex;
+  padding: 48px 10px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-bottom: 1px solid var(--Text-Primary, #170D01);
+  overflow-y: hidden;
+}
+
+.project > a{
+  flex: 1 0 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1)
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--Background-Primary, #706C68);
+  border-radius: 2px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:  #454240
+  border-radius: 2px;
+}

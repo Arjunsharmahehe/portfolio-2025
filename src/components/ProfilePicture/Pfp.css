@@ -1,0 +1,27 @@
+.pictureContainer{
+  height: 488px;
+  object-fit: cover;
+  display: flex;
+  width: 356px;
+  padding-top: 44px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: var(--Border-Radius, 16px);
+  background: var(--Background-Primary, #706C68);
+  animation-name: appear;
+  animation-duration: 425ms;
+}
+
+.picture{
+  width: 356px;
+  height: 444px;
+  border-radius: 16px;
+  background: url('../../../public/Pfp.png') #706c68 50% / cover no-repeat;
+}
+
+@media (max-width: 708px){
+  .pictureContainer{
+    width: 100%;
+  }
+}
